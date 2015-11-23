@@ -45,8 +45,8 @@ class Tester(unittest.TestCase):
 	def test_get_least_urgent(self):
 		reg_animal_list = [['sam', 'snake', 4], ['gertrude', 'goat', 99]]
 		zero_animal_list = [['sam', 'snake', 0]]
-		self.assertEqual(vet.get_most_urgent(reg_animal_list), ['sam', 'snake', 4])
-		self.assertEqual(vet.get_most_urgent(zero_animal_list), ['sam', 'snake', 0])
+		self.assertEqual(vet.get_least_urgent(reg_animal_list), ['sam', 'snake', 4])
+		self.assertEqual(vet.get_least_urgent(zero_animal_list), ['sam', 'snake', 0])
 
 	def test_allowed_animal(self):
 		allowed_animals = ['dog', 'cat', 'snake', 'goat', 'pig', 'duck', 'narwhale','unicorn']
